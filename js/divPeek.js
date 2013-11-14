@@ -2,7 +2,7 @@
 //(see https://github.com/davidhalford/DivPeek)
 //===============================================================================
 //CONFIG: 
-var elementsToTrack = ["#autobots"];
+var elementsToTrack = ["#autobots", "#rain"];
 
 var pixelOffset = -24;
 var inClassName = "inViewPort";

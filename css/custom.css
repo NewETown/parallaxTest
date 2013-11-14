@@ -243,12 +243,47 @@ html, body {
     transition: 0.5s ease-out;
 }
 
-.del1 {
-    -webkit-transition-delay:5s;
-    transition-delay:5s;
+
+.rain1 {top:0px;  opacity:1;  -webkit-transform: rotate(0deg); }
+.rain2 {top:0px;  opacity:1;  -webkit-transform: rotate(0deg); }
+.rain3 {top:0px;  opacity:1;  -webkit-transform: rotate(0deg); }
+.rain4 {top:0px;  opacity:1;  -webkit-transform: rotate(0deg); }
+
+.outViewPort .rain1 {top:-300px;  opacity:0;  -webkit-transform: rotate(-270deg); }
+.outViewPort .rain2 {top:-275px;  opacity:0.2;-webkit-transform: rotate(-270deg); }
+.outViewPort .rain3 {top:-225px;  opacity:0.7;-webkit-transform: rotate(-270deg); }
+.outViewPort .rain4 {top:-200px;   opacity:0.7;-webkit-transform: rotate(-270deg); }
+
+.rain1, .rain2, .rain3, .rain4 {
+    position: relative;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out ;
+    transition: all 1s ease-out;
 }
 
-.del2 {
-    -webkit-transition-delay:10s;
-    transition-delay:10s;
+.rain1 {
+      
+} 
+
+.inViewPort .rain2 {
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+} 
+.inViewPort .rain3 {
+    -webkit-transition-delay: 1.5s;
+    -moz-transition-delay: 1.5s;
+    -o-transition-delay: 1.5s;
+    -ms-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+}
+.inViewPort .rain4 {
+    -webkit-transition-delay: 0.5s;
+    -moz-transition-delay: 0.5s;
+    -o-transition-delay: 0.5s;
+    -ms-transition-delay: 0.5s;
+    transition-delay: 0.5s;
 }
